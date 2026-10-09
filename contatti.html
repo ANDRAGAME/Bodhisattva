@@ -148,7 +148,16 @@
         radial-gradient(800px 400px at 80% 10%, rgba(198, 161, 90, 0.18), transparent 60%),
         linear-gradient(180deg, var(--indigo), #10183f 70%, #0b102e);
       color: #fff;
-      padding: 88px 7vw 80px;
+      padding: 72px 7vw 80px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+    .contatti .logo-mail {
+      width: min(220px, 55vw);
+      margin: 0 auto 28px;
     }
     .mail {
       display: inline-block;
@@ -252,15 +261,16 @@
       </button>
       <nav class="menu-panel">
         <a href="contatti.html">CONTATTI</a>
+        <a href="mailto:bodhisattvajob@gmail.com">bodhisattvajob@gmail.com</a>
       </nav>
     </div>
   </div>
   </header>
 
   <main class="contatti">
+    <img class="logo-mail" src="logo.webp" alt="Logo Bodhisattva Job" />
     <p class="kicker">Contatti</p>
     <h1>Scrivimi.</h1>
-    <p class="lead">Per una landing o una sponsorizzazione, una mail basta.</p>
     <a class="mail" href="mailto:bodhisattvajob@gmail.com">bodhisattvajob@gmail.com</a>
   </main>
   <script>
