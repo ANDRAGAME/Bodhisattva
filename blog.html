@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Bodhisattva Job — Landing page e sponsorizzazioni che portano clienti</title>
+  <title>Blog — Bodhisattva Job</title>
   <meta name="description" content="Agenzia che realizza landing page ad alta conversione e sponsorizzazioni etiche. Più richieste, più visibilità, più clienti." />
   <link rel="icon" href="profilo.webp" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -142,6 +142,31 @@
     .btn.ghost { background: transparent; color: #fff; border: 1px solid rgba(255,255,255,.35); }
     .seal { width: min(480px, 100%); margin: 0 auto; filter: drop-shadow(0 20px 40px rgba(0,0,0,.35)); }
     .fine { display: none; }
+    .contatti {
+      min-height: calc(100vh - 80px);
+      background:
+        radial-gradient(800px 400px at 80% 10%, rgba(198, 161, 90, 0.18), transparent 60%),
+        linear-gradient(180deg, var(--indigo), #10183f 70%, #0b102e);
+      color: #fff;
+      padding: 72px 7vw 80px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+    .contatti .logo-mail {
+      width: min(220px, 55vw);
+      margin: 0 auto 28px;
+    }
+    .mail {
+      display: inline-block;
+      margin-top: 18px;
+      color: var(--gold-2);
+      font-size: clamp(1.3rem, 3vw, 2rem);
+      text-decoration: none;
+      border-bottom: 1px solid rgba(230, 211, 161, 0.6);
+    }
     section { padding: 78px 7vw; }
     h2 {
       font-family: "Cormorant Garamond", serif;
@@ -224,7 +249,7 @@
 </head>
 <body>
   <header class="nav">
-    <a class="brand" href="#inizio">
+    <a class="brand" href="index.html">
       <img src="profilo.webp" alt="Sigillo Bodhisattva Job" />
       <span>Bodhisattva Job</span>
     </a>
@@ -242,21 +267,8 @@
   </div>
   </header>
 
-  <main id="inizio" class="hero">
-    <div>
-      <p class="kicker">Agenzia di landing page e sponsorizzazioni</p>
-      <h1>Una pagina chiara. Una sponsorizzazione giusta. Clienti nuovi.</h1>
-      <p class="lead">Aiutiamo attività, professionisti e negozi a farsi trovare da chi è già pronto a comprare. Niente promesse vuote: una pagina che spiega l’offerta e una pubblicità che la porta alle persone giuste.</p>
-      <video class="hero-video" controls playsinline preload="metadata" src="monaco.mp4"></video>
-      <div class="actions">
-        <a class="btn" href="https://wa.me/393758262100?text=Ciao%2C%20vorrei%20una%20landing%20page%20per%20la%20mia%20attivit%C3%A0." onclick="fbq('track','Lead');fbq('track','Contact');">Scrivimi su WhatsApp</a>
-      </div>
-    </div>
-    <img class="seal" src="logo.webp" alt="Logo Bodhisattva Job" />
+  <main class="contatti blog">
   </main>
-  <section class="fine">
-    <img src="logo.webp" alt="Logo Bodhisattva Job" />
-  </section>
   <script>
     const menu = document.querySelector(".menu");
     const menuBtn = document.querySelector(".menu-btn");
