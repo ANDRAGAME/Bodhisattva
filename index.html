@@ -147,6 +147,31 @@
     .btn.ghost { background: transparent; color: #fff; border: 1px solid rgba(255,255,255,.35); }
     .seal { width: min(480px, 100%); margin: 0 auto; filter: drop-shadow(0 20px 40px rgba(0,0,0,.35)); }
     .fine { display: none; }
+    @keyframes rise {
+      from { opacity: 0; transform: translateY(16px); }
+      to { opacity: 1; transform: none; }
+    }
+    @keyframes emerge {
+      from { opacity: 0; transform: scale(0.97); }
+      to { opacity: 1; transform: none; }
+    }
+    .rise { animation: rise 1.6s ease both; }
+    .d1 { animation-delay: 0.15s; }
+    .d2 { animation-delay: 0.32s; }
+    .d3 { animation-delay: 0.5s; }
+    .d4 { animation-delay: 0.68s; }
+    .emerge { animation: emerge 2s ease 0.25s both; }
+    .nav { animation: rise 1.2s ease both; }
+    .btn, .nav a.cta {
+      transition: transform 0.6s ease, box-shadow 0.6s ease;
+    }
+    .btn:hover, .nav a.cta:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 28px rgba(198, 161, 90, 0.22);
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .rise, .emerge, .nav { animation: none; }
+    }
     section { padding: 78px 7vw; }
     h2 {
       font-family: "Cormorant Garamond", serif;
@@ -249,18 +274,18 @@
 
   <main id="inizio" class="hero">
     <div>
-      <p class="kicker">Agenzia di landing page e sponsorizzazioni</p>
-      <h1>Una pagina chiara. Una sponsorizzazione giusta. Clienti nuovi.</h1>
-      <p class="lead">Aiutiamo attività, professionisti e negozi a farsi trovare da chi è già pronto a comprare. Niente promesse vuote: una pagina che spiega l’offerta e una pubblicità che la porta alle persone giuste.</p>
-      <video class="hero-video" controls playsinline preload="metadata" src="monaco.mp4"></video>
-      <div class="actions">
+      <p class="kicker rise">Agenzia di landing page e sponsorizzazioni</p>
+      <h1 class="rise d1">Una pagina chiara. Una sponsorizzazione giusta. Clienti nuovi.</h1>
+      <p class="lead rise d2">Aiutiamo attività, professionisti e negozi a farsi trovare da chi è già pronto a comprare. Niente promesse vuote: una pagina che spiega l’offerta e una pubblicità che la porta alle persone giuste.</p>
+      <video class="hero-video rise d3" controls playsinline preload="metadata" src="monaco.mp4"></video>
+      <div class="actions rise d4">
         <a class="btn" href="https://wa.me/393758262100?text=Ciao%2C%20vorrei%20una%20landing%20page%20per%20la%20mia%20attivit%C3%A0." onclick="fbq('track','Lead');fbq('track','Contact');">Scrivimi su WhatsApp</a>
       </div>
     </div>
-    <img class="seal" src="logo.webp" alt="Logo Bodhisattva Job" />
+    <img class="seal emerge" src="logo.webp" alt="Logo Bodhisattva Job" />
   </main>
   <section class="fine">
-    <img src="logo.webp" alt="Logo Bodhisattva Job" />
+    <img class="emerge" src="logo.webp" alt="Logo Bodhisattva Job" />
   </section>
   <script>
     const menu = document.querySelector(".menu");
