@@ -98,6 +98,7 @@
     }
     .btn.ghost { background: transparent; color: #fff; border: 1px solid rgba(255,255,255,.35); }
     .seal { width: min(480px, 100%); margin: 0 auto; filter: drop-shadow(0 20px 40px rgba(0,0,0,.35)); }
+    .fine { display: none; }
     section { padding: 78px 7vw; }
     h2 {
       font-family: "Cormorant Garamond", serif;
@@ -157,6 +158,13 @@
     @media (max-width: 860px) {
       .hero, .grid3, .grid2 { grid-template-columns: 1fr; }
       .seal { display: none; }
+      .fine {
+        display: flex;
+        justify-content: center;
+        padding: 12px 7vw 64px;
+        background: #0b102e;
+      }
+      .fine img { width: min(420px, 78vw); height: auto; }
       .nav a.cta { display: none; }
     }
   </style>
@@ -193,5 +201,8 @@
     </div>
     <img class="seal" src="logo.webp" alt="Logo Bodhisattva Job" />
   </main>
+  <section class="fine">
+    <img src="logo.webp" alt="Logo Bodhisattva Job" />
+  </section>
 </body>
 </html>
