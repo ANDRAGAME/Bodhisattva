@@ -54,7 +54,10 @@
         radial-gradient(800px 400px at 80% 10%, rgba(198, 161, 90, 0.18), transparent 60%),
         linear-gradient(180deg, var(--indigo), #10183f 70%, #0b102e);
       color: #fff;
-      display: block;
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 40px;
+      align-items: center;
       min-height: 100vh;
       padding: 72px 7vw 64px;
     }
@@ -84,13 +87,6 @@
       display: block;
     }
     .actions { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 28px; }
-    .fine {
-      background: #0b102e;
-      display: flex;
-      justify-content: center;
-      padding: 72px 7vw 96px;
-    }
-    .fine img { width: min(560px, 86vw); height: auto; }
     .btn {
       display: inline-block;
       text-decoration: none;
@@ -101,7 +97,7 @@
       font-weight: 600;
     }
     .btn.ghost { background: transparent; color: #fff; border: 1px solid rgba(255,255,255,.35); }
-    .seal { width: min(420px, 100%); margin: 0 auto; filter: drop-shadow(0 20px 40px rgba(0,0,0,.35)); }
+    .seal { width: min(480px, 100%); margin: 0 auto; filter: drop-shadow(0 20px 40px rgba(0,0,0,.35)); }
     section { padding: 78px 7vw; }
     h2 {
       font-family: "Cormorant Garamond", serif;
@@ -160,6 +156,7 @@
     }
     @media (max-width: 860px) {
       .hero, .grid3, .grid2 { grid-template-columns: 1fr; }
+      .seal { display: none; }
       .nav a.cta { display: none; }
     }
   </style>
@@ -194,9 +191,7 @@
         <a class="btn" href="https://wa.me/393758262100?text=Ciao%2C%20vorrei%20una%20landing%20page%20per%20la%20mia%20attivit%C3%A0." onclick="fbq('track','Lead');fbq('track','Contact');">Scrivimi su WhatsApp</a>
       </div>
     </div>
+    <img class="seal" src="logo.webp" alt="Logo Bodhisattva Job" />
   </main>
-  <section class="fine">
-    <img src="logo.webp" alt="Logo Bodhisattva Job" />
-  </section>
 </body>
 </html>
