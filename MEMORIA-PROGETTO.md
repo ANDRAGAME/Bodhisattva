@@ -2,6 +2,11 @@
 
 Aggiornata il 12 ottobre 2026. Da leggere prima di modificare il sito.
 
+## Sito online
+
+- Pubblicato su Netlify: https://beamish-speculoos-d72239.netlify.app
+- Andrea lo indica come link del sito live (a volte lo chiama Vercel: l’indirizzo è Netlify).
+
 ## Repository
 
 - GitHub pubblico: https://github.com/ANDRAGAME/Bodhisattva
